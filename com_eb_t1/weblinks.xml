@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+  <name>com_weblinks</name>
+  <creationDate>21-Oct-2012</creationDate>
+  <author>Joomla! Project</author>
+  <authorEmail>admin@joomla.org</authorEmail>
+  <authorUrl>www.joomla.org</authorUrl>
+  <copyright>(C) 2005 - 2012 Open Source Matters. All rights reserved.
+	</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <version>3.0.0</version>
+  <description>COM_WEBLINKS_XML_DESCRIPTION</description>
+  <scriptfile/>
+  <install>
+    <sql/>
+  </install>
+  <uninstall>
+    <sql/>
+  </uninstall>
+  <update>
+    <schemas/>
+  </update>
+  <files folder="site">
+    <folder>controllers</folder>
+    <folder>helpers</folder>
+    <folder>language</folder>
+    <folder>models</folder>
+    <folder>views</folder>
+    <filename>controller.php</filename>
+    <filename>index.html</filename>
+    <filename>metadata.xml</filename>
+    <filename>router.php</filename>
+    <filename>weblinks.php</filename>
+  </files>
+  <administration>
+    <menu img="class:class:weblinks">com_weblinks</menu>
+    <submenu>
+      <menu img="class:class:weblinks" link="option=com_weblinks">com_weblinks_links</menu>
+      <menu img="class:class:weblinks-cat" link="option=com_categories&amp;extension=com_weblinks">com_weblinks_categories</menu>
+    </submenu>
+    <files folder="admin">
+      <folder>controllers</folder>
+      <folder>helpers</folder>
+      <folder>language</folder>
+      <folder>models</folder>
+      <folder>sql</folder>
+      <folder>tables</folder>
+      <folder>views</folder>
+      <filename>access.xml</filename>
+      <filename>config.xml</filename>
+      <filename>controller.php</filename>
+      <filename>index.html</filename>
+      <filename>weblinks.php</filename>
+    </files>
+  </administration>
+</extension>
