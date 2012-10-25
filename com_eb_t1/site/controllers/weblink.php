@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  com_weblinks
+ * @subpackage com_eb_tb1
  *
  * @copyright   Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
@@ -11,7 +11,7 @@ defined('_JEXEC') or die;
 
 /**
  * @package     Joomla.Site
- * @subpackage  com_weblinks
+ * @subpackage com_eb_tb1
  * @since       1.5
  */
 class WeblinksControllerWeblink extends JControllerForm
