@@ -204,7 +204,7 @@ class WeblinksModelWeblink extends JModelAdmin
 			// Set ordering to the last item if not set
 			if (empty($table->ordering)) {
 				$db = JFactory::getDbo();
-				$db->setQuery('SELECT MAX(ordering) FROM #__weblinks');
+				$db->setQuery('SELECT MAX(ordering) FROM #__eb_t1');
 				$max = $db->loadResult();
 
 				$table->ordering = $max + 1;

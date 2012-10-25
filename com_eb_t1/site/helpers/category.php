@@ -21,7 +21,7 @@ class WeblinksCategories extends JCategories
 {
 	public function __construct($options = array())
 	{
-		$options['table'] = '#__weblinks';
+		$options['table'] = '#__eb_tb1';
 		$options['extension'] = 'com_weblinks';
 		parent::__construct($options);
 	}

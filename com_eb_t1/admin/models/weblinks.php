@@ -119,7 +119,7 @@ class WeblinksModelWeblinks extends JModelList
 	protected function getListQuery()
 	{
 		// Create a new query object.
-		$db		= $this->getDbo();
+		$db	= $this->getDbo();
 		$query	= $db->getQuery(true);
 		$user	= JFactory::getUser();
 
@@ -133,7 +133,7 @@ class WeblinksModelWeblinks extends JModelList
 				'a.language, a.publish_up, a.publish_down'
 			)
 		);
-		$query->from($db->quoteName('#__weblinks').' AS a');
+		$query->from($db->quoteName('#__eb_tb1').' AS a');
 
 		// Join over the language
 		$query->select('l.title AS language_title');

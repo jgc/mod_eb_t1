@@ -25,7 +25,7 @@ class WeblinksTableWeblink extends JTable
 	 */
 	public function __construct(&$db)
 	{
-		parent::__construct('#__weblinks', 'id', $db);
+		parent::__construct('#__eb_tb1', 'id', $db);
 	}
 
 	/**
@@ -127,7 +127,7 @@ class WeblinksTableWeblink extends JTable
 		}
 
 		// check for existing name
-		$query = 'SELECT id FROM #__weblinks WHERE title = '.$this->_db->Quote($this->title).' AND catid = '.(int) $this->catid;
+		$query = 'SELECT id FROM #__eb_tb1 WHERE title = '.$this->_db->Quote($this->title).' AND catid = '.(int) $this->catid;
 		$this->_db->setQuery($query);
 
 		$xid = (int) $this->_db->loadResult();
